@@ -1,0 +1,72 @@
+@import "null.scss";
+
+$accent-color: #EFB891;
+$accent-color-hover: #EFA470;
+$accent-color-active: #A7734F;
+$accent-color-current: #A7734F;
+$main-color:#DF4D41;
+$main-color-background: #EF7970;
+$main-color-dark:#911E15;
+
+
+#root{
+    width: 100%;
+    height: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+.App {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    text-align: center;
+    background-color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;}
+
+.block{
+    margin: 10px;
+    & ul {display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 30px;
+        & li{
+            width: 40px;
+            border: 1px solid gray;
+            background-color:azure;
+            font-weight: bold;
+            &:last-child{
+            border: none;
+            width: 30px;
+            display:flex;
+            justify-content: center;}
+        }}
+    & input {height: 50px;
+    font-size: 24px;}
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    opacity: 1%;
+    background: gray; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: darkgray; 
+  }
